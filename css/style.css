@@ -1,0 +1,266 @@
+/** COLORS USED **/
+/* Green #005E35 */
+/* Green #004714 */
+/* Green #005E00 */
+/* Green #194700 */
+/* Green #425E00 */
+/* Black #000000 */
+/* White #ffffff */
+
+/* FONTS */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Neuton', serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Neuton:300,400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4;
+    background-color: #f2f2f2;
+    font-family: 'Neuton', serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h1 i {
+    color: #005E35;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.wrapper {
+    margin: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.bottom-hr {
+    margin-bottom: 30px;
+}
+
+.top-hr {
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    overflow: hidden;
+    width: 100%;
+    background-color: #004714;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.tag-line {
+    background-color: #005E00;
+    color: white;
+}
+
+.tag-line h2 {
+    padding: 5px 0 5px 0;
+    margin: 0;
+    padding-left: 1rem;
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+button {
+    width: 100%;
+    overflow: hidden;
+/*    background-color: #004714;*/
+    border: solid 2px black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.button-content button {
+    display: block;
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+#active-button {
+    background-color: #425E00;
+    color: white;
+}
+
+.main-content {
+    margin-bottom: 40px;
+}
+
+.button-content button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1rem;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: #004714;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+.right-content p {
+    text-indent: 40px;
+}
+
+.right-content {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 30rem) {
+
+    nav ul li a:hover,
+    .button-content a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    nav ul li {
+        border-bottom: solid 1px #fff;
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
+    p {
+        font-size: 0.75rem;
+    }
+    
+}
+@media screen and (min-width: 30rem) {
+    
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        width: 20%;
+        margin: 0.5% 2%;
+    }
+    
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 0;
+    }
+    
+    nav ul li a:hover {
+        border-bottom: solid 3px #fff;
+        padding-bottom: 3px;
+    }
+    
+    .button-content {
+        display: inline-block;
+        width: 32.65%;
+        text-align: center;
+        padding-left: 0rem;
+    }
+    
+    .button-content button {
+        display: inline-block;
+        padding: 15px 0;
+        width: 100%;
+    }
+    
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .tag-line h2 {
+        font-size: 1.3em;
+    }
+    
+}
+
+@media screen and (min-width: 60rem) {
+
+    .wrapper {
+        max-width: 60rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .left-content {
+        width: 30%;
+        float: left
+    }
+    
+    .right-content {
+        width: 65%;
+        text-align: left;
+        float: right;
+        margin-top: 0;
+    }
+    
+}
